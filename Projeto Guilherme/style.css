@@ -1,9 +1,10 @@
 /* ESTILO GERAL */
 *{
+    scroll-behavior: smooth; /*suaviza links internos */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    .poppins-semibold {
+    .poppins-semibold { /* Formato de todas as fontes do site */
         font-family: "Poppins", sans-serif;
         font-weight: 600;
         font-style: normal;
@@ -20,7 +21,9 @@ body{
 }
 
 header div .logo{
+    text-shadow: 2px 2px 2px #2c2c2c;
     width: 40px;
+    height: 150px;
     font-size: 30px;
     font-weight: 900;
     color: rgb(163, 4, 4);
@@ -47,8 +50,10 @@ section div h2 span{
     color: rgb(129, 2, 2);
 }
 /* ESTILO CABEÇALHO */
+
 header{
     padding: 40px 4%;
+    background: linear-gradient(to bottom, rgb(44, 0, 0), rgb(0, 0, 0));
 }
 
 header > .interface{
@@ -89,6 +94,7 @@ header nav ul li a:hover{
     box-shadow: 0px 0px 8px #541d1d
 }
 /* ESTILO DO TOPO DO SITE */
+
 section.topo-do-site{
     padding: 30px 4%;
 }
@@ -104,7 +110,9 @@ section .topo-do-site .flex{
     height: 460px;
 }
 .topo-do-site .img-topo-site img{
-    width: 250px;
+    padding: 0 4%;
+    width: 300px;
+    height: 400px;
     position: relative;
     animation: flutuante 2s ease-in-out infinite alternate;
 }
@@ -155,6 +163,7 @@ section.especialidades .flex{
     border: 2px solid #000000;
     margin-top: 40px;
     border-radius: 20px;
+    cursor: pointer;
 
 }
 
@@ -290,6 +299,7 @@ section.sobre .txt-sobre h2 span{
 }
 
 .sobre .flex img{
+    padding: 0 4%;
     width: 300px;
     border: 300px;
 }
@@ -325,6 +335,7 @@ section.sobre .flex2{
 
 .sobre .flex2 img{
     max-width: 100%;
+    border-radius: 5%;
 }
 
 .sobre .viagens{
@@ -450,7 +461,7 @@ form .btn-enviar input{
 }
 
 form .btn-enviar input:hover{
-    box-shadow: 0 0 15px #380000;
+    box-shadow: 0 0 20px #380000;
     transform: scale(1.10) ;
 }
 
@@ -485,6 +496,7 @@ footer .rodape .flex{
 }
 
 footer div div .logo{
+        text-shadow: 2px 2px 2px #2c2c2c;
         width: 10%;
         font-size: 30px;
         font-weight: 900;
@@ -503,14 +515,17 @@ footer img{
 }
 
 footer a{
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #2c2c2c;
     color: #b10202;
 }
 
 /* Estilo Celular */
-@media screen and (max-widht: 1088px){
+
+@media only screen and (max-widht: 1100px) {
     /* CLASSES GERAIS */
     /* CABEÇALHO */
-    .menu-desktop, .btn-contato{
-        display: none;
+    .topo-do-site{
+         display: none;
     }
 }
