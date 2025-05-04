@@ -106,13 +106,14 @@ section .topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site{
+    margin-top: 180px;
     width: 360px;
     height: 460px;
 }
 .topo-do-site .img-topo-site img{
     padding: 0 4%;
-    width: 300px;
-    height: 400px;
+    width: 700px;
+    height: 700px;
     position: relative;
     animation: flutuante 2s ease-in-out infinite alternate;
 }
@@ -300,8 +301,8 @@ section.sobre .txt-sobre h2 span{
 
 .sobre .flex img{
     padding: 0 4%;
-    width: 300px;
-    border: 300px;
+    width: 500px;
+    border: 500px;
 }
 
 section.sobre .flex2{
