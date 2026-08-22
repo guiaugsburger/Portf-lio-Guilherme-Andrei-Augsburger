@@ -6,7 +6,7 @@
     --orange: #f2633d;
     --orange-dark: #d84d2c;
     --line: rgba(244, 240, 233, .18);
-    --display: "Manrope", Arial, sans-serif;
+    --display: "Manrope", "Helvetica Neue", Arial, sans-serif;
     --mono: "DM Mono", monospace;
 }
 
@@ -26,6 +26,7 @@ body {
     font-family: var(--display);
     line-height: 1.5;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 img {
@@ -142,6 +143,13 @@ textarea {
     transition: background .25s ease, border-color .25s ease, color .25s ease, transform .25s ease;
 }
 
+.social-icon {
+    display: block;
+    fill: currentColor;
+    height: 14px;
+    width: 14px;
+}
+
 .header-cta {
     border-bottom: 1px solid var(--orange);
     color: var(--paper);
@@ -162,7 +170,7 @@ textarea {
 }
 
 .hero {
-    background: var(--ink);
+    background: radial-gradient(circle at 76% 38%, #20272a 0, var(--ink) 34%);
     min-height: 665px;
     overflow: hidden;
     padding: 73px 0 0;
@@ -190,6 +198,9 @@ textarea {
 }
 
 .hero-copy {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
     padding: 37px 0 0 74px;
     position: relative;
     z-index: 2;
@@ -245,12 +256,14 @@ h2 em {
 .hero-actions {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     gap: 29px;
     margin-top: 36px;
 }
 
 .button {
     border: 1px solid transparent;
+    border-radius: 999px;
     cursor: pointer;
     justify-content: center;
     min-height: 51px;
@@ -303,7 +316,6 @@ h2 em {
 
 .hero-note {
     align-items: center;
-    bottom: 27px;
     color: #929794;
     display: flex;
     font-family: var(--mono);
@@ -311,7 +323,7 @@ h2 em {
     gap: 13px;
     letter-spacing: .02em;
     line-height: 1.7;
-    position: absolute;
+    margin-top: 52px;
 }
 
 .note-number {
@@ -333,11 +345,12 @@ h2 em {
 
 .visual-backdrop {
     background: var(--orange);
-    border-radius: 48% 48% 0 0;
+    border-radius: 48% 48% 30px 30px;
     bottom: 0;
     height: 435px;
     position: absolute;
     right: 45px;
+    box-shadow: 0 24px 60px rgba(242, 99, 61, .18);
     transform: rotate(9deg);
     width: 322px;
 }
@@ -368,8 +381,12 @@ h2 em {
     object-position: center top;
     position: absolute;
     right: 99px;
+    border: 8px solid var(--paper);
+    border-radius: 170px 170px 30px 30px;
+    box-shadow: 0 24px 55px rgba(0, 0, 0, .28);
     width: 300px;
     z-index: 1;
+    animation: float 6s ease-in-out infinite;
 }
 
 .available-card {
@@ -386,6 +403,8 @@ h2 em {
     padding: 13px 17px;
     position: absolute;
     z-index: 2;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
 }
 
 .available-card strong {
@@ -426,6 +445,8 @@ h2 em {
     transform: rotate(12deg);
     width: 83px;
     z-index: 2;
+    background: rgba(17, 20, 23, .42);
+    backdrop-filter: blur(4px);
 }
 
 .hero-stamp span {
@@ -583,6 +604,7 @@ h2 em {
 
 .service-card {
     border: 1px solid #cfcbc3;
+    border-radius: 22px;
     min-height: 378px;
     padding: 27px 29px;
     position: relative;
@@ -692,6 +714,7 @@ h2 em {
 
 .gallery-frame {
     border: 1px solid var(--orange);
+    border-radius: 32px;
     height: 445px;
     padding: 13px;
     transform: rotate(-4deg);
@@ -699,10 +722,12 @@ h2 em {
 }
 
 .gallery-frame img {
+    border-radius: 23px;
     filter: saturate(.7);
     height: 100%;
     object-fit: cover;
     width: 100%;
+    animation: float 7s ease-in-out 1s infinite;
 }
 
 .gallery-caption {
@@ -803,6 +828,7 @@ h2 em {
     display: block;
     overflow: hidden;
     position: relative;
+    border-radius: 22px;
 }
 
 .project-card img,
@@ -983,6 +1009,16 @@ h2 em {
 
 .contact-form .button:hover {
     background: var(--paper);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .site-footer {
@@ -1287,6 +1323,11 @@ h2 em {
     }
 
     .ticker-track {
+        animation: none;
+    }
+
+    .hero-portrait,
+    .gallery-frame img {
         animation: none;
     }
 }

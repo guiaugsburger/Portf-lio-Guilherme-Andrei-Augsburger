@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Portfólio de Guilherme Andrei Augsburger",
+  "main": "server.js",
   "engines": {
     "node": ">=18"
   },
