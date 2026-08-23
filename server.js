@@ -19,7 +19,7 @@ const contentTypes = {
 };
 
 function fileForRequest(requestPath) {
-    if (requestPath === "/") {
+    if (requestPath === "/" || requestPath === "/index.html") {
         return path.join(projectDirectory, "index.html");
     }
 
@@ -79,5 +79,5 @@ const server = http.createServer((request, response) => {
 });
 
 server.listen(port, "0.0.0.0", () => {
-    console.log(`Portfólio disponível na porta ${port}`);
+    console.log(`Preview disponível em http://localhost:${port}`);
 });
