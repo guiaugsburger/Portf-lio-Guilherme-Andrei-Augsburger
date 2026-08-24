@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="900" viewBox="0 0 1000 900">
+  <rect width="1000" height="900" fill="#b8c488"/>
+  <rect x="120" y="180" width="460" height="520" fill="#f3f1eb" transform="rotate(-12 120 180)"/>
+  <circle cx="690" cy="440" r="190" fill="#20211d"/>
+  <path d="M700 245 845 500 575 580Z" fill="#d4e64b"/>
+  <text x="60" y="100" fill="#20211d" font-family="monospace" font-size="25">FORMA STUDIO</text>
+</svg>

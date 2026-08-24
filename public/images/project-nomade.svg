@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850">
+  <rect width="1200" height="850" fill="#d6b9a2"/>
+  <path d="M0 630C220 430 390 720 580 480s330-190 620-30v400H0Z" fill="#20211d"/>
+  <circle cx="740" cy="290" r="150" fill="#d4e64b"/>
+  <circle cx="740" cy="290" r="80" fill="#d6b9a2"/>
+  <text x="70" y="110" fill="#20211d" font-family="monospace" font-size="27">CASA NÔMADE</text>
+</svg>
