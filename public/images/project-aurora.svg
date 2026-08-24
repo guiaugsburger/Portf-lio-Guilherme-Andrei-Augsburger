@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000">
+  <rect width="1200" height="1000" fill="#b8b8a7"/>
+  <circle cx="620" cy="490" r="320" fill="#29302c"/>
+  <path d="M530 170c140 70 190 220 90 350S380 710 300 560s90-280 230-390Z" fill="#d4e64b"/>
+  <path d="M180 800h820" stroke="#f3f1eb" stroke-width="2"/>
+  <text x="90" y="120" fill="#f3f1eb" font-family="monospace" font-size="28">ATELIÊ AURORA / 2024</text>
+</svg>

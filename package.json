@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-guilherme-augsburger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfólio de Guilherme Andrei Augsburger",
+  "main": "server.js",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "node --check server.js",
+    "dev": "node server.js",
+    "preview": "node server.js",
+    "start": "node server.js"
+  }
+}
