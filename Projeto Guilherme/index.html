@@ -1,191 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <!--Código google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!--Fim do google fonts-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <meta name="description" content="Portfólio de Guilherme Andrei Augsburger — Analista e Desenvolvedor de Sistemas.">
+    <title>Guilherme Augsburger | Analista & Desenvolvedor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#topo" aria-label="Voltar ao início">
+                <span class="brand-mark">GA</span>
+                <span class="brand-name">Guilherme <strong>Augsburger</strong></span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Navegação principal">
+                <a class="active" href="#topo">Início</a>
+                <a href="#especialidades">Especialidades</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#portfolio">Portfólio</a>
+            </nav>
+
+            <a class="button button-small header-contact" href="#contato">Vamos conversar <span>↗</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                <span></span><span></span>
+                <span class="sr-only">Abrir menu</span>
+            </button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação mobile">
+            <a href="#topo">Início</a>
+            <a href="#especialidades">Especialidades</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato <span>↗</span></a>
+        </nav>
+    </header>
+
     <main>
-        <header>
-            <div class="interface" id="topofixo">
-                <div class="logo">
-                    <a>Guilherme Andrei Augsburger</a>
-                    
-                </div><!--logo-->
-                <nav class="menu-desktop">
-                    <ul>
-                        <li><a href="#topo">Início</a></li>
-                        <li><a href="#especialidades">Especialidades</a></li>
-                        <li><a href="#sobre">Sobre Mim</a></li>
-                        <li><a href="#portfolio">Portfólio</a></li>
-                    </ul>
-    
-                </nav>
-    
-                <div class="btn-contato">
-                    <a href="#formulario">
-                        <button>Contato</button>
+        <section class="hero section-padding" id="topo">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> Analista & Desenvolvedor de Sistemas</p>
+                    <h1>O digital pode ser <em>extraordinário.</em></h1>
+                    <p class="hero-description">Transformo ideias em experiências digitais funcionais, bonitas e feitas para conectar pessoas.</p>
+                    <div class="hero-actions">
+                        <a class="button" href="#contato">Entre em contato <span>↗</span></a>
+                        <a class="text-link" href="#portfolio">Conheça meu trabalho <span>↓</span></a>
+                    </div>
+                    <div class="hero-note">
+                        <span class="note-line"></span>
+                        <span>Disponível para novos projetos</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-glow"></div>
+                    <div class="visual-frame">
+                        <img src="Imagens/WhatsApp Image 2025-02-18 at 15.41.51.jpeg" alt="Guilherme Andrei Augsburger">
+                    </div>
+                    <div class="visual-tag">
+                        <span class="tag-icon">✦</span>
+                        <span><strong>criatividade</strong><br>com propósito</span>
+                    </div>
+                    <div class="visual-index">01 <span>/ 04</span></div>
+                </div>
+            </div>
+            <div class="container hero-bottom">
+                <span>Scroll para explorar</span>
+                <span class="scroll-arrow">↓</span>
+                <span class="hero-rule"></span>
+                <span class="hero-location">Brasil <span>•</span> remoto</span>
+            </div>
+        </section>
+
+        <section class="services section-padding" id="especialidades">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">O que eu faço</p>
+                    <h2>Habilidades que <em>fazem a diferença.</em></h2>
+                    <p class="section-intro">Da primeira ideia ao último detalhe, trabalho para criar soluções que funcionam de verdade.</p>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card featured">
+                        <div class="card-top"><span class="card-number">01</span><span class="card-arrow">↗</span></div>
+                        <img class="service-icon" src="Imagens/códigos web.png" alt="">
+                        <h3>Criação de sites</h3>
+                        <p>Sites responsivos, rápidos e com uma experiência pensada para cada tela e cada pessoa.</p>
+                        <span class="card-label">web design · front-end</span>
+                    </article>
+                    <article class="service-card">
+                        <div class="card-top"><span class="card-number">02</span><span class="card-arrow">↗</span></div>
+                        <img class="service-icon" src="Imagens/video (1).png" alt="">
+                        <h3>Edição de vídeos</h3>
+                        <p>Histórias visuais com ritmo, clareza e personalidade para comunicar sua mensagem.</p>
+                        <span class="card-label">edição · storytelling</span>
+                    </article>
+                    <article class="service-card service-card-note">
+                        <div class="quote-mark">“</div>
+                        <p>Um bom projeto nasce quando tecnologia e intenção caminham juntas.</p>
+                        <span class="card-label">minha forma de trabalhar</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section-padding" id="sobre">
+            <div class="container about-grid">
+                <div class="about-photo">
+                    <img src="Imagens/WhatsApp Image 2025-02-18 at 15.41.51.jpeg" alt="Guilherme trabalhando com tecnologia">
+                    <div class="photo-caption"><span>Guilherme Andrei</span><span>desde 2003</span></div>
+                </div>
+                <div class="about-copy">
+                    <p class="eyebrow">Um pouco sobre mim</p>
+                    <h2>Olá, muito prazer.<br><em>Eu sou o Guilherme.</em></h2>
+                    <p>Trabalho com Análise e Desenvolvimento de Sistemas, unindo lógica, curiosidade e criatividade para construir presença digital.</p>
+                    <p>Meu foco é entender o que cada projeto precisa e encontrar as ferramentas certas para transformar necessidades em resultados claros, funcionais e autênticos.</p>
+                    <a class="text-link accent-link" href="#contato">Vamos criar algo juntos <span>↗</span></a>
+                    <div class="about-facts">
+                        <div><strong>01</strong><span>olhar<br>estratégico</span></div>
+                        <div><strong>02</strong><span>atenção aos<br>detalhes</span></div>
+                        <div><strong>03</strong><span>vontade de<br>aprender</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container hobbies">
+                <div class="hobbies-heading">
+                    <p class="eyebrow">Fora da tela</p>
+                    <h3>O que me <em>inspira.</em></h3>
+                </div>
+                <div class="hobby-list">
+                    <div class="hobby"><span>01</span><strong>Viajar</strong><small>novos horizontes</small></div>
+                    <div class="hobby"><span>02</span><strong>Música</strong><small>tocar e ouvir</small></div>
+                    <div class="hobby"><span>03</span><strong>Pilotar</strong><small>sentir a estrada</small></div>
+                    <div class="hobby"><span>04</span><strong>Aprender</strong><small>expandir ideias</small></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section-padding" id="portfolio">
+            <div class="container">
+                <div class="portfolio-heading">
+                    <div>
+                        <p class="eyebrow">Trabalhos selecionados</p>
+                        <h2>Feito com intenção.<br><em>Feito para marcar.</em></h2>
+                    </div>
+                    <p class="section-intro">Um pouco do que venho criando entre códigos, imagens e boas histórias.</p>
+                </div>
+                <div class="project-grid">
+                    <a class="project project-large" href="#contato">
+                        <img src="Imagens/WhatsApp Image 2025-02-18 at 15.50.19.jpeg" alt="Projeto de criação web">
+                        <span class="project-overlay"></span>
+                        <div class="project-info"><span>01 / web</span><h3>Presença que<br>conecta</h3><b>↗</b></div>
+                    </a>
+                    <a class="project project-tall" href="#contato">
+                        <img src="Imagens/IMG_20241013_155021.jpg" alt="Projeto audiovisual">
+                        <span class="project-overlay"></span>
+                        <div class="project-info"><span>02 / visual</span><h3>Olhar em<br>movimento</h3><b>↗</b></div>
+                    </a>
+                    <a class="project project-wide" href="#contato">
+                        <img src="Imagens/IMG_20241228_145558.jpg" alt="Registro de uma jornada criativa">
+                        <span class="project-overlay"></span>
+                        <div class="project-info"><span>03 / pessoal</span><h3>Ideias em<br>movimento</h3><b>↗</b></div>
                     </a>
                 </div>
-            </div><!--interface-->
-        </header>
-        <section class="topo-do-site" id="topo">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                       <h1>Analista e Desenvolvedor de Sistemas</h1> 
-                       <p>Proficional preparado e qualificado para transformar suas ideias em realidades digitais, funcionais e impactantes</p>
-                       <div class="btn-contato">
-                        <a href="#formulario">
-                            <button>Entre em Contato</button>
-                        </a>
-                       </div>
-                    </div><!--txt-topo-site-->
-                    <div class="img-topo-site">
-                        <img src="Imagens/WhatsApp Image 2025-02-18 at 15.41.51.jpeg" alt="">
-
-                    </div><!--img-topo-site-->
-                </div><!--Flex-->
-            </div><!--interface-->
-        </section><!--topo-do-site-->
-
-        <section class="especialidades" id="especialidades">
-            <div class="interface">
-                <h2 class="titulo">Minhas <span>Especialidades.</span></h2>
-                <div class="flex">
-                    <div class="especial-box">
-                        <img src="Imagens/códigos web.png" alt="">
-                        <h3>Criação de Sites</h3>
-                        <p>Desenvolvimento de sites altamente otimizados e de perfeita visualização</p>
-                    </div><!--especial-box-->
-
-                    <div class="especial-box">
-                        <img src="Imagens/video (1).png" alt="">
-                        <h3>Edição de Vídeos</h3>
-                        <p>Vídeos de ótima qualidade de vídeo e de áudio, que atendem as suas ideias e excedem suas expectativas</p>
-                    </div><!--especial-box-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--especialidades-->
-
-        <section class="sobre" id="sobre">
-            <div class="interface">
-                <div class="flex">
-                    <div class="img-sobre">
-                        <img src="Imagens/WhatsApp Image 2025-02-18 at 15.41.51.jpeg" alt="">
-                    </div><!--img-sobre-->
-
-                    <div class="txt-sobre">
-                        <h2>OLÁ, MUITO PRAZER, <span>SOU GUILHERME AUGSBURGER</span></h2>
-    
-                        <P>Olá, trabalho com Análise e Desenvolvimento de Sistemas voltado principalmente para Criação de Sites e Edições de vídeos.</P>
-                        <p>Meu foco principal é atender todas as necessidades através das ferramentas adequadas e funcionais, com muita criatividade e dedicação. </p>
-                        <div class="btn-social">
-                            <a href="#"><button id="img1"></button></a>
-                            <a href="#"><button id="img2"></button></a>
-                            <a href="#"><button id="img3"></button></a>
-                            <a href="#"><button id="img4"></button></a>
-                        </div><!--btn-social-->
-                    </div><!--txt-sobre-->
-                </div><!--flex-->
-                <div class="flex2">
-                    <div class="hobbies">
-                        <h3>HOBBIES</h3>
-                        <h4>Utilizo meu tempo livre para diversas atividades:</h4>
-                                               
-                        <div class="viagens">
-                            <h2>VIAGENS</h2>
-                            <img src="Imagens/IMG_20241013_152909.jpg" alt="">
-                            <p>Procurar lugares bonitos e conectados com a natureza, conhecendo pessoas e culturas e alcançando novos horizontes.</p>
-                        </div>
-                            
-                            
-                        <div class="viagens">
-                             <h2>TOCAR INSTRUMENTO <span>MUSICAL</span></h2>
-                             <img src="Imagens/IMG_20241013_152909.jpg" alt="">
-                             <p>Ser capaz de reproduzir o som que os grandes músicos de outrora criaram.</p>
-                        </div>
-
-
-                        <div class="lazer">
-                           <h2>PILOTAR</h2>
-                           <img src="Imagens/IMG_20241013_152909.jpg" alt="">
-                           <p>Se conectar com as estradas, apreciando as belezas da natureza a nossa volta. </p>
-                        </div>
-
-
-                        <div class="lazer">
-                             <h2>APRIMORAR MEU <span>INTELECTO</span></h2>
-                             <img src="Imagens/IMG_20241013_154926.jpg" alt="">
-                             <p>Sempre na busca de melhores conhecimentos sobre o que eu trabalho e sobre o mundo.</p>
-                            </div>
-                        </div><!--hobbies-->
-                </div><!--flex2-->       
-
-            </div><!--interface-->
-        </section><!--sobre-->
-
-        <section class="portfolio" id="portfolio">
-            <div class="interface">
-                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
-                <div class="flex">
-                    <div class="img-port" style="background-image: url(Imagens/WhatsApp\ Image\ 2025-02-18\ at\ 15.50.19.jpeg);">
-                        <div class="overlay">Projeto 1</div>
-                    </div>
-                </div>
             </div>
-        </section><!--portfolio-->
+        </section>
 
-        <section class="formulario" id="formulario">
-            <div class="interface">
-                <h2 class="titulo">FALE <span>COMIGO.</span></h2>
-                <form action="">
-                    <input type="text" placeholder="Seu nome completo" required>
-                    <input type="text" placeholder="Seu gmail" required>
-                    <input type="text" placeholder="Seu celular">
-                    <textarea name="" id="" placeholder="Sua Mensagem"></textarea>
-                    <div class="btn-enviar"> <input type="submit" value="ENVIAR"></div>
+        <section class="contact section-padding" id="contato">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <p class="eyebrow">Tem uma ideia?</p>
+                    <h2>Vamos tirar<br>do papel <em>juntos.</em></h2>
+                    <p>Conte um pouco sobre o seu projeto. Vou adorar entender como posso ajudar.</p>
+                    <a class="email-link" href="mailto:guiaugs123@gmail.com.br">guiaugs123@gmail.com.br <span>↗</span></a>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <label for="name">Seu nome</label>
+                    <input id="name" name="name" type="text" placeholder="Como posso te chamar?" required>
+                    <label for="email">Seu e-mail</label>
+                    <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required>
+                    <label for="message">Fale sobre o projeto</label>
+                    <textarea id="message" name="message" rows="3" placeholder="O que você tem em mente?" required></textarea>
+                    <button class="button form-submit" type="submit">Enviar mensagem <span>↗</span></button>
+                    <p class="form-feedback" role="status" aria-live="polite"></p>
                 </form>
             </div>
-        </section><!--formulario-->
+        </section>
     </main>
 
-    <footer><!--Rodapé-->
-        <div class="interface">
-            <div class="rodape">
-                <div class="flex">
-                    <div class="logo">
-                        <a href="#topofixo">Guilherme Andrei Augsburger</a>
-                    </div>
-                    <div class="btn-social">
-                        <a href="#"><button id="img1"></button></a>
-                        <a href="#"><button id="img2"></button></a>
-                        <a href="#"><button id="img3"></button></a>
-                        <a href="#"><button id="img4"></button></a>
-                    </div><!--btn-social-->
-                </div><!--flex-->
-            </div><!--rodape-->
-
-            <div class="rodape2">
-                <div class="flex">
-                    <div class="img-gmail">
-                        <p><img src="Imagens/o-email.png" alt=""></p>
-                    </div>
-                    <div class="gmail">
-                        <a href="mailto:guiaugs123@gmail.com.br">guiaugs123@gmail.com.br</a>
-                    </div>
-                </div><!--flex-->
-            </div><!--rodape-->
-            
-        </div><!--interface-->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <a class="brand" href="#topo" aria-label="Voltar ao início">
+                <span class="brand-mark">GA</span>
+                <span class="brand-name">Guilherme <strong>Augsburger</strong></span>
+            </a>
+            <p>Analista & Desenvolvedor de Sistemas</p>
+            <a class="back-top" href="#topo">Voltar ao topo <span>↑</span></a>
+        </div>
+        <div class="container footer-bottom">
+            <span>© <span id="current-year">2025</span> Guilherme Augsburger</span>
+            <span>feito com intenção <i>✦</i></span>
+        </div>
     </footer>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
